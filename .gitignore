@@ -3,3 +3,5 @@ __pycache__
 scrap*
 *.xlsx
 .vscode
+apikey.txt
+match_data
