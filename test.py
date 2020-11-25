@@ -1,13 +1,10 @@
-from riotapi.riot_api import Matchup
-from riotapi.updateMatchData import MatchUpdater
+from riotapi.matchup import Matchup
 import riotapi.utilities as util
 
 from typing import List, Any
 
-api = util.Api("RGAPI-dd067c21-cbb2-4422-b7c6-3a082a22ad8e", 'na1')
 username = "Yelwah"
-matchup = Matchup(api, username)
-
+matchup = Matchup(util.Api(), username)
 
 totalwins = 0
 totallosses = 0

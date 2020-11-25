@@ -1,8 +1,7 @@
-from riotapi.utilities import getSavedMatches, Api
+from riotapi.utilities import Api
 from requests.exceptions import HTTPError
-from riotwatcher import LolWatcher, ApiError
 from riotapi import utilities as riotUtil
-import json, os, time
+import json, time
 from typing import Set
 
 class MatchUpdater():

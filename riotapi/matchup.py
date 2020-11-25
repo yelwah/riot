@@ -1,4 +1,4 @@
-from riotapi import utilities, updateMatchData
+from riotapi import utilities
 from riotwatcher import ApiError
 
 class Matchup:

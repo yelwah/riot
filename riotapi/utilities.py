@@ -4,10 +4,16 @@ from typing import List, Any
 
 BLUE_TEAM, RED_TEAM = 100, 200
 
+def getApiKey():
+  key = ''
+  with open('apikey.txt', 'r', encoding="utf-8") as file:
+    key = file.readline()
+  return key
+
 class Api:
-  def __init__(self, apiKey, region="na1"):
-    self.apiKey = apiKey
-    self.watcher = LolWatcher(apiKey)
+  def __init__(self, region="na1"):
+    self.apiKey = getApiKey()
+    self.watcher = LolWatcher(self.apiKey)
     self.region = region
 
 def getQueueCodes(self, queueName):
