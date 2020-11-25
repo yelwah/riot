@@ -1,0 +1,5 @@
+dragontail-*
+__pycache__
+scrap*
+*.xlsx
+.vscode
